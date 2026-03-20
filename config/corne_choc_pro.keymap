@@ -68,48 +68,20 @@
         media {
             display-name = "Media";
             bindings = <
-&trans          &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2          &bt BT_SEL 3          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans        &kp C_VOLUME_DOWN  &kt K_MUTE            &kp C_VOLUME_UP       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&studio_unlock  &trans        &trans             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans                &trans                &trans                  &trans  &trans  &trans
+&trans          &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2          &bt BT_SEL 3          &trans  &bootloader  &bootloader  &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset      &trans        &kp C_VOLUME_DOWN  &kt K_MUTE            &kp C_VOLUME_UP       &trans  &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&studio_unlock  &trans        &trans             &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans                &trans                &trans                            &trans  &trans  &trans
             >;
         };
 
         symbols {
             display-name = "symbols";
             bindings = <
-&kp  &kp AT_SIGN  &kp SLASH     &kp ASTERISK   &kp EXCLAMATION  &kp CARET      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp MINUS    &kp LS(PLUS)  &kp LS(UNDER)  &kp EQUAL        &kp AMPERSAND  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
-&kp  &kp HASH     &kp TILDE     &kp RA(COMMA)  &kp DOLLAR       &kp PERCENT              &kp  &kp  &kp  &kp  &kp  &kp
-                                &kp            &kp              &kp                      &kp  &kp  &kp
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp AT_SIGN  &kp SLASH     &kp ASTERISK   &kp EXCLAMATION  &kp CARET      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp MINUS    &kp LS(PLUS)  &kp LS(UNDER)  &kp EQUAL        &kp AMPERSAND  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp HASH     &kp TILDE     &kp RA(COMMA)  &kp DOLLAR       &kp PERCENT                    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans         &trans           &trans                         &trans  &trans  &trans
             >;
         };
     };
