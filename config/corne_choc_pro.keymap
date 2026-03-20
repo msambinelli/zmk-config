@@ -78,10 +78,10 @@
         symbols {
             display-name = "symbols";
             bindings = <
-&trans  &trans     &trans        &trans         &kp LS(EXCL)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp MINUS  &kp LS(PLUS)  &kp LS(UNDER)  &kp EQUAL     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans        &kp C          &kp SPACE     &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans         &trans        &trans                  &trans  &trans  &trans
+&kp  &kp AT_SIGN  &kp SLASH     &kp ASTERISK   &kp EXCLAMATION  &kp CARET      &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp MINUS    &kp LS(PLUS)  &kp LS(UNDER)  &kp EQUAL        &kp AMPERSAND  &kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp
+&kp  &kp HASH     &kp TILDE     &kp RA(COMMA)  &kp DOLLAR       &kp PERCENT              &kp  &kp  &kp  &kp  &kp  &kp
+                                &kp            &kp              &kp                      &kp  &kp  &kp
             >;
         };
 
